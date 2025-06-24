@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap');
+
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+body {
+ font-family: 'Lora', serif;
+  background-color: var(--bg);
+
+}
+
+*{
+   
+  font-size: 17px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.2px;
+}
+
+
+
+:root {
+  --bg: #fffcff;
+  --text: #f869c8;
+  --accent: #1c1c1c;
+}
+
+.dancing-font {
+  font-family: 'Dancing Script', cursive !important;
+}
+
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  
+}
