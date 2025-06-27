@@ -38,7 +38,7 @@ const Home = () => {
         <div className="banner flex items-center">
           <div className="textSec w-6/12 p-6 ">
             <h4 className="text-[var(--accent)] leading-normal font-bold">
-              <span className="font-extrabold dancing-font text-[var(--text)]">Welcome</span> 
+              <span className="font-extrabold dancing-font text-[var(--text)]">Hello</span> 
             </h4>
             <h5 className="text-[var(--accent)] leading-none ">
               {" "}
