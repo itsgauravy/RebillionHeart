@@ -1,0 +1,33 @@
+footer {
+    height: 2.5rem;
+}
+
+footer > div > p {
+    font-size: 12px ;
+    padding: 0 10px;
+}
+
+.socil{
+    column-gap:15px ;
+    padding :0 10px
+}
+
+
+@media (max-width:720px) {
+    footer > div {
+        flex-direction: column;
+       
+    }
+
+    footer{
+        height: 4.2rem;
+        padding:0px 0 10px 0;
+    }
+
+    footer >div > div ,footer> div p{
+        width: 100% !important;
+        text-align: center;
+        justify-content: center !important; 
+    }
+
+}

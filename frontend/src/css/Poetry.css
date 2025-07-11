@@ -1,0 +1,43 @@
+.poetimgis img{
+    padding: 3px;
+    box-shadow:rgba(14,30,37,0.12) 0px 2px 4px 0px,rgba(14,30,37,0.32) 0px 2px 16px 0px;
+}
+
+.poetimgis{
+    display: none !important;
+}
+
+.potChilds{
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width:1240px) {
+    .poh2 ,.poep{
+        width: 50% !important;
+    }
+}
+
+
+@media (max-width:920px) {
+    .poh2 ,.poep{
+        width: 80% !important;
+    }
+
+    .poetimgis {
+        top: 60%;
+        right: 50% !important;
+        transform:translateX(-50%);
+        width: 80% !important;
+
+    }
+
+    .flowerim { 
+        display: none !important;
+    }
+}

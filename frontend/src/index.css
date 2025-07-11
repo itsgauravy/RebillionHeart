@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap');
+
+/* 
+@tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+
+
+body {
+ font-family: 'Lora', serif;
+  background-color: var(--bg);
+
+}
+
+*{
+   
+  font-size: 17px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.2px;
+}
+
+::selection{
+  color: var(--bg);
+  background-color: var(--text);
+}
+
+
+
+:root {
+  --bg:  #eefff5;
+  --text: #0b5638;
+  --accent: #2F3E46;
+  --text2:#38865b;
+}
+
+.dancing-font {
+  font-family: 'Dancing Script', cursive !important;
+}
+
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background:var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text2);
+}
+
+.container{
+  max-width: 1440px !important;
+}

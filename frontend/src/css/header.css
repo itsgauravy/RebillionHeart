@@ -1,0 +1,178 @@
+
+header h2{
+    font-size: 1.9rem ;
+    font-weight: 900;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 10px;
+}
+
+.headerside{
+    background: rgba(255, 255, 255, 0.34);
+
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+}
+
+
+.nav-link {
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.active-link {
+  color: var(--accent); /* or highlight color */
+}
+
+.menubtn{
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+
+.btncross{
+  font-size:0.75rem;
+  font-weight: bold;
+  padding:10px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--text);
+  margin-top: 6px;
+  border-radius:50%;
+  border: 0.5px solid var(--text);
+}
+
+/* Base nav link style */
+.nav-link {
+  position: relative;
+  padding: 0.2rem 0.6rem;
+  color: var(--accent)	;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover effect: underline animation + text color */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: var(--text);
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover {
+  color: var(--text2);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.active-link {
+  /* color: var(--text); */
+  color: rgb(41, 148, 96);
+  /* border: 1px solid var(--text); */
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 800;
+ transform: scale(0.95);
+
+  padding: 0.3rem 0.6rem;
+  transition: transform 0.4s ease, color 0.4s ease, font-size 0.4s;
+
+}
+
+.menubtn{
+  display: none;
+  color: var(--text);
+}
+
+/* When open: slide into view */
+
+
+/* Only show menu and cross buttons below 780px */
+.menubtn, .btncross {
+  display: none;
+}
+
+
+nav hr{
+  display: none;
+  margin: 10px 0;
+  border-color: var(--text);
+}
+
+
+@media (max-width: 780px) {
+
+nav hr{
+  display: block;
+}
+  
+.navs {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start off-screen */
+  height: 100vh;
+  width: 60%;
+  max-width: 300px;
+  background: #e1f9ebf6;
+  backdrop-filter: blur(20px);
+  transition: right 0.3s ease-in-out;
+  flex-direction: column !important;
+  padding: 0rem 1rem;
+  z-index: 999;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.navs.open {
+  right: 0;
+}
+  .menubtn,
+  .btncross {
+    display: flex;
+  }
+
+  .navs {
+    display: flex !important;
+  }
+
+  header >div{
+    display: flex;
+    flex-direction: row !important;
+  }
+
+ header >div h2{
+  width: 80%;
+  text-align: left;
+ }
+
+  .navs{
+   
+    flex-direction: column !important;
+  }
+
+
+ 
+}

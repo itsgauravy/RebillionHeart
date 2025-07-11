@@ -1,0 +1,101 @@
+
+1. Homepage – Welcome to My Rebellion Heart
+
+URL: /
+Includes:
+	•	Hero banner (photography + quote)
+	•	Welcome poem or statement
+	•	Short intro to you
+	•	Featured poem
+	•	Book preview section
+	•	Newsletter invite
+
+⸻
+
+2. About Me – The Soul Behind the Words
+
+URL: /about
+	•	My spiritual journey
+	•	What poetry means to me
+	•	Why I call it a “rebellion”
+	
+
+⸻
+
+3. Poetry – The Unwritten Heart Collection
+
+URL: /poetry
+	•	A gallery or blog of my poems
+	•	story behind my latest poetic piece
+
+⸻
+
+4. Photography x Poetry – Nature is My Mirror
+
+URL: /soulprints or /visual-poetry
+	•	Gallery of digital poetry on my own nature photographs
+	•	Can become my signature style offering
+
+⸻
+
+5. Book – Coming Soon
+
+URL: /book
+	•	About The Unwritten Heart
+	•	Sample poem(s)
+	•	Cover preview (when ready)
+	•	Preorder button or waitlist form
+	•	Soft launch timeline
+
+⸻
+
+6. Blog – Letters From the Wild Soul
+
+URL: /blog or /journal
+	•	Soul musings, spiritual reflections, twin flame insights
+	•	Optional: monthly energy letter or “soul check-in” posts
+	•	A place to weave writing & teaching
+
+⸻
+
+7. Offerings (optional future) NOT YET
+
+URL: /work-with-me or /offerings
+	•	Reiki distance sessions
+	•	1:1 intuitive writing
+	•	Digital poetry packs or audio poems
+
+⸻
+
+8. Contact
+
+URL: /contact
+	•	Email form
+	•	Social icons
+	•	“Write to me if a poem found you at the right time” as header
+
+⸻
+
+9. Newsletter
+
+URL: /soul-letter or embed form on homepage
+Title ideas:
+	•	Poems From the Wild Soul
+	•	Whispers from the Unwritten Heart
+	•	Rebel Soul Letters
+
+
+
+
+
+
+
+
+	Purpose	Color Name	Hex Code	Preview
+🌿 Main BG	Pastel Green	#B8EFCF	
+🌱 Accent 1	Mint Cream	#F0FFF4	
+🍃 Accent 2	Honeydew	#E8F5E9	
+🍏 Button BG	Pale Green	#A8D5BA	
+🌼 Highlight	Light Yellow	#FFF9C4	
+🌸 Soft Pink	Misty Rose	#FFE4E1	
+🌑 Text Color	Charcoal Gray	#2F3E46
