@@ -54,6 +54,7 @@
 @media (max-width:720px) {
     .callReb {
         flex-wrap: wrap;
+        margin-top: 0!important;
     }
 
     .callReb div{
@@ -93,7 +94,12 @@
 @media (max-width:580px) {
     .aboutText,.imgAbt{
         width: 95% !important;
-        margin: 10px auto;
+        margin: 0px auto;
+    }
+
+    .imgAbt img{
+        width: 100% !important;
+        
     }
 
      .aboutText {

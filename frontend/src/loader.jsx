@@ -52,7 +52,7 @@ const Loader = ({ onComplete }) => {
         ref={contentRef}
         className="flex flex-col items-center justify-center z-10"
       >
-        <FiFeather className="text-[var(--text)] text-6xl mb-4 animate-pulse" />
+        <FiFeather className="text-[var(--text)]  mb-4 animate-pulse" />
         <h1
           ref={textRef}
           style={{ fontSize: "2.5rem" }}

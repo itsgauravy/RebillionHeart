@@ -56,7 +56,7 @@ A sacred space for the tender, the torn, and the rising. Here poetry meets heali
          {/* <button className="btnhome @apply border border-[color:var(--text)] text-[color:var(--accent)] px-2.5 py-1.5 border-solid;"> Books </button> */}
 
           </div>
-          <div className="imgsec w-6/12 p-6  overflow-hidden">
+          <div className="imgsec w-6/12  overflow-hidden">
             <img
              ref={(el) => (imgRefs.current[0] = el)}
               className=" @apply w-[45%] rounded-none bg-center shadow-[rgba(0,0,0,0.12)_0px_1px_3px,rgba(0,0,0,0.24)_0px_1px_2px] m-2.5 p-0 h-full "
@@ -116,7 +116,7 @@ A sacred space for the tender, the torn, and the rising. Here poetry meets heali
           </div>
 
         <div className="banner b3 flex items-center ">
-          <div className="textSec w-6/12 p-6   ps-2 ">
+          <div className="textSec w-6/12    ps-2 ">
             <p className="text-[var(--accent)] leading-loose  ">
              <span className="font-extrabold pspan  text-[var(--text)]" style={{paddingLeft:"0"}}>Love, Loss, and Becoming:  </span><br />
 They said that choosing someone who didn't choose you back is a weakness. They said moving on means forgetting and that healing is linear - but I stayed with grief, the love and truth 
@@ -139,7 +139,7 @@ when the world said - "you should be over this by now"
       </button>
 
           </div>
-          <div className="imgsec w-6/12 p-6  overflow-hidden">
+          <div className="imgsec w-6/12  overflow-hidden">
             <img
              ref={(el) => (imgRefs.current[3] = el)}
               className="w-full h-full"

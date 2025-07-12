@@ -1,0 +1,78 @@
+.input-style {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.floating-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+   background-color: transparent;
+}
+
+.floating-input input,
+.floating-input textarea,
+.floating-input select {
+  width: 100%;
+  padding: 1rem 0.75rem 0.25rem;
+  border: none;
+  border-bottom: 2px solid var(--text);
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.floating-input label {
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #888;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.floating-input input:focus + label,
+.floating-input input:not(:placeholder-shown) + label,
+.floating-input textarea:focus + label,
+.floating-input textarea:not(:placeholder-shown) + label,
+.floating-input select:focus + label,
+.floating-input select:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  background-color: transparent;
+}
+
+.select-label {
+  top: -0.5rem !important;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: black !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

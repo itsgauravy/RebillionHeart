@@ -4,6 +4,7 @@ import Title from '../components/Title';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Sparkles } from 'lucide-react';
+import "../css/Books.css";
 
 function Books() {
   const containerRef = useRef(null);
@@ -43,10 +44,10 @@ function Books() {
   return (
      <section className="container w-full  min-h-[100vh-11.5em]">
             <Title heading="Books" />  
-    <div ref={containerRef} className=" bg-[var(--bg)] text-[var(--text)] w-[75%] py-[20px] mx-auto relative overflow-hidden">
+    <div ref={containerRef} className=" bg-[var(--bg)] text-[var(--text)] w-[75%] bookWr py-[20px] mx-auto relative overflow-hidden">
      
 
-      <div className="max-w-4xl mx-auto text-center mb-20">
+      <div className="max-w-[95%] mx-auto text-center mb-20 ">
         <span className="inline-block animate-pulse">
             <Sparkles className="inline w-8 h-8 text-[var(--text)] mb-2" />
           </span>
@@ -71,7 +72,7 @@ function Books() {
       </section>
 
       {/* Section Grid Layout */}
-      <div className="flex  gap-[20px] w-full mx-auto justify-center">
+      <div className="flex  gap-[20px] w-full mx-auto justify-center abtSecUn">
         {/* About */}
         <section className="w-[40%] ">
           <h2 className="text-[20px] mb-[20px] font-[800] text-[var(--text)]">About the Series</h2>
@@ -127,8 +128,8 @@ function Books() {
              mt-[15px]
              rounded-[40px_40px_40px_40px] 
              border-solid 
-             border-[2px_2px_2px_2px]
-              border-[rgba(255,255,255,0.333)]
+             border-1
+              border-[var(--text)]
                hover:text-[--text2]
                 hover:bg-[#e5f5ec] 
                 hover:shadow-[-2px_-1px_8px_0px_#ffffff,2px_1px_8px_0px_rgb(95_157_231_/_48%)]

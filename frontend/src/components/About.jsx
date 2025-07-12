@@ -10,7 +10,7 @@ function About() {
       
       <div className="aboutp flex flex-wrap">
       <div className="imgAbt w-[75%] mx-auto overflow-hidden">
-          <img src="/perpic/img7.jpg" alt=""className='  @apply bg-bottom bg-cover @apply w-4/5 mx-auto my-2.5 object-cover  h-[50vh]' />
+          <img src="/perpic/img-7.jpg" alt=""className='  @apply bg-bottom bg-cover @apply w-[70%] mx-auto my-2.5 object-cover  h-[60vh]' />
 
             <h3 className='@apply w-full text-center text-[1.7rem] text-[color:var(--text)]'> The Soul Behind The Words</h3>
         <p className='text-[color:var(--text2)] abtp text-center' >
@@ -70,7 +70,7 @@ Each piece is a prayer. A process. An untold story. A map back to self.
         
         <div className='w-[100%] flex  flex-wrap content-baseline justify-center'> 
                   <div className='w-[30%] flex align-middle'>
-          <img src="/perpic/IMG_2739.jpeg" alt="" className=' w-[90%] mx-auto h-fit my-auto'  />
+          <img src="/perpic/IMG_2739.jpeg" alt="" className=' w-[90%] mx-auto  my-auto'  />
         </div>
 
       <div className='w-[50%]'>
@@ -117,7 +117,7 @@ Each photo a love letter to the divine woven through the everyday.
 
         
 
-         <img src="/perpic/IMG_3212.jpeg" alt="" className=' w-[30%] h-fit imfwT'  /> 
+         <img src="/perpic/IMG_3212.jpeg" alt="" className=' w-[30%]  imfwT'  /> 
         </div>
 
           {/* <div className='w-[25%] flex justify-around max-h-[500px] overflow-hidden  imtwo'>

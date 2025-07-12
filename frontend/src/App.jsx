@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import './App.css';
 import Gallary from './components/Gallary';
 import Books from './components/Books';
+import Contact from './components/Contact';
+import Newsletter from './components/Newsletter';
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
             <Route path="poetry" element={<Poetry />} />
             <Route path="soulprints" element={<Gallary />} />
             <Route path="books" element={<Books />} />
+            <Route path="Contact" element={<Contact />} />
+            <Route path="soulletter" element={<Newsletter />} />
           </Routes>
           <Footer />
         </BrowserRouter>

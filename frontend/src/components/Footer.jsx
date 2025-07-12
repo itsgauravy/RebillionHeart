@@ -6,7 +6,7 @@ import { FaInstagram, FaFacebookF, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
 function Footer () {
   return (
-    <footer className="bg-[var(--text)] text-[var(--bg)] sticky bottom-0  !p-2.5">
+    <footer className="bg-[var(--text)] text-[var(--bg)] static bottom-0  !p-2.5 z-50">
       <div className="max-w-7xl mx-auto align-center flex   justify-between items-center h-full ">
          <p className=" mt-1 pr-6 w-[40%] ">
             © {new Date().getFullYear()} Jaskaran. All rights reserved.

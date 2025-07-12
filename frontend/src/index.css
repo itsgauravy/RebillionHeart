@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&display=swap');
 
-/* 
+
 @tailwind base;
-@tailwind components; */
+@tailwind components;
 @tailwind utilities;
 
 

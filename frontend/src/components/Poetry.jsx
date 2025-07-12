@@ -1,9 +1,9 @@
 import Title from "../components/Title";
-import "../css/Poetry.css";
+
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import "../css/Poetry.css";
 gsap.registerPlugin(ScrollTrigger);
 function Poetry() {
   const containerRef = useRef(null);
@@ -14,7 +14,7 @@ useEffect(() => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
-          start: "top 75%",
+          start: "top 85%",
           toggleActions: "play none none reverse",
         },
        opacity: 0,
@@ -73,7 +73,7 @@ useEffect(() => {
             These poems were never meant to impress —<br />
             they were meant to feel. <br /> <br />
             The Unwritten Heart is a living, breathing collection —<br />
-            a sacred archive of words I once couldn’t say out loud. <br />{" "}
+            a sacred archive of words I once couldn’t say out loud. <br />
             <br />
             It’s where I process love, loss, memory, and the wild, spiritual
             path of becoming. <br />
@@ -82,13 +82,7 @@ useEffect(() => {
           </p>
         </div>
         <div className="potChilds w-full relative">
-          <div className="poetimgis absolute w-[22%]  left-[4%] top-[6%]">
-            <img
-              src="/perpic/Poet-2.jpg"
-              alt=""
-              className="w-[75%] rounded-[50px] opacity-[75%] mt-[25vh]"
-            />
-          </div>
+        
           <div className="flowerim absolute w-[22%] top-[20%] right-[2%] flex-wrap flex ">
             <img
               src="/perpic/lineart3.png"
@@ -117,7 +111,7 @@ useEffect(() => {
             Each part is a book — a season of soul — written through silence,
             heartbreak, and revelation. <br /> <br />
             The series begins with Echoes of a Love I Couldn’t Hold — a raw
-            collection of poemsbr
+            collection of poems
             <br />
             tracing the journey through longing, denial, fear, and beauty of
             falling in love. <br />
@@ -171,10 +165,10 @@ useEffect(() => {
             - Featured Poems -
           </h2>
 
-          <ol className=" list-inside text-[var(--text)] space-y-2 ">
+          <ol className=" list-inside text-[var(--text)]  ">
             <li className="max-w-[50%] relative">
-                <img src="/perpic/Poet-3.jpg" alt="" className="absolute w-[45%] top-[10%] right-[-100%] rounded-[10px] poem-img" />
-              <p className="poem-line text-[color:var(--text2)] text-left w-max me-auto">
+                <img src="/perpic/Poet-3.png" alt="" className="absolute w-[52%] top-[0%] right-[-100%] @apply  poem-img" />
+                   <p className="poem-line text-[color:var(--text2)] text-left w-max me-auto">
                 If my words still overwhelm you, <br />
                 Then I wonder, what will my actions do.. <br />
                 What if I tell you - <br />
@@ -185,8 +179,8 @@ useEffect(() => {
               </p>
             </li>
 
-            <li className=" w-max ms-auto  my-[10vh] max-w-[50%] relative">
-              <img src="/perpic/Poet-5.jpg" alt="" className="absolute w-[60%] top-[10%] left-[-150%] rounded-[10px] poem-img" />
+            <li className=" w-max ms-auto  my-[12vh] max-w-[50%] relative">
+              <img src="/perpic/Poet-5.jpg" alt="" className="absolute w-[80%] top-[-5%] left-[-140%] rounded-[5px] poem-img" />
               <p className="poem-line text-[color:var(--text2)] text-left">
                 …and I thought I was slowing erasing you <br />
                 not knowing that I was weaving you <br /> <br />
@@ -227,7 +221,8 @@ useEffect(() => {
 
             <li className=" w-max me-automax-w-[50%]  mt-[6vh] relative">
                <img src="/perpic/Poet-4.jpg" alt="" className="absolute w-[50%] top-[25%] right-[-80%] rounded-[10px] poem-img" />
-
+                <img src="/perpic/extras/ex3.png" alt="" className="absolute w-[50%] top-[30%] right-[-100%] rounded-[10px] poem-img" />
+ 
               <p className=" poem-line text-[color:var(--text2)] text-left">
                 <span className="font-[650] italic">
                   It’s almost been a year —
@@ -263,7 +258,7 @@ useEffect(() => {
             </li>
 
             <li className=" w-max ms-auto max-w-[50%] my-[10vh] relative">
-              <img src="/perpic/extras/Poet-7.png" alt="" className="absolute w-[80%] top-[0%] left-[-85%]  poem-img" />
+              <img src="/perpic/Poet-7.jpg" alt="" className="absolute w-[60%] top-[2%] left-[-85%] rounded-[10px]  poem-img" />
 
               <p className="poem-line text-[color:var(--text2)] text-left">
                 Why can’t I just go back to summer of 2021 <br />
@@ -286,7 +281,7 @@ useEffect(() => {
 
             <li className=" w-max me-auto relative">
 
-              <img src="/perpic/Poet-1.jpg" alt="" className="absolute w-[45%] top-[10%] right-[-100%] rounded-[10px] poem-img" />
+              <img src="/perpic/Poet-1.png" alt="" className="absolute w-[45%] top-[10%] right-[-100%] rounded-[10px] poem-img" />
              
               <p className="poem-line text-[color:var(--text2)] text-left">
                 I know greater the patience, sweeter is the fruit - <br />

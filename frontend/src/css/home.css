@@ -431,7 +431,7 @@ overflow: hidden;
 }
 
 .banner .imgsec img{
-    width: 45%;
+    width: 60%;
     margin: 0px auto;
 }
 
@@ -460,8 +460,10 @@ overflow: hidden;
     max-height: 35vh;
 }
 .b4 .textSec {
-        top: 42%;
-        width: 92% !important;
+    position: unset;
+    margin-top: 41vh;
+        /* top: 42%; */
+        width: 98% !important;
     } 
 
     .imgbl-2{
@@ -472,8 +474,10 @@ overflow: hidden;
 }
 
 .bnr2  .textSec {
-    top: 46%;
-    left: 0;
+    /* top: 46%;
+    left: 0; */
+    position: unset;
+    margin-top: 40vh;
     text-align: center;
 }
  

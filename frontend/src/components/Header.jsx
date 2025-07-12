@@ -11,11 +11,11 @@ function Header() {
     { to: "", label: "Home" },
     { to: "about", label: "About Me" },
     { to: "poetry", label: "Poetry" },
-    { to: "soulprints", label: "Gallery" },
+    // { to: "soulprints", label: "Gallery" },
     { to: "books", label: "Books" },
-    { to: "blog", label: "Blog" },
+    // { to: "blog", label: "Blog" },
     { to: "/contact", label: "Contact" },
-    { to: "/workwithme", label: "Offerings" },
+    // { to: "/workwithme", label: "Offerings" },
     { to: "/soulletter", label: "Newsletter" },
     
   ];
@@ -41,21 +41,21 @@ function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="fixed w-full z-50 px-6 py-4 gap-y-2">
+    <header className="fixed w-full z-50 ">
       <div className="max-w mx-auto flex flex-col items-center justify-center">
-        <button className="menubtn text-3xl font-bold" onClick={handleMenuToggle}>
+        <button className="menubtn font-bold" onClick={handleMenuToggle}>
           ☰
         </button> 
-        <h2 className="text-5xl  md:text-6xl font-bold  tracking-wider text-center py-5 px-5 text-[var(--text)]">
+        <h2 className=" text-center  text-[var(--text)]">
           Rebellion Heart
         </h2>
 
        
 
-        <nav className={`navs tracking-wider text-xs pt-[20px] font-semibold ${menuOpen ? 'open' : ''}`} ref={menuRef}>
-{/*         
-          <button className="btncross" onClick={handleCloseMenu}>X</button> */}
-     
+        <nav className={`navs tracking-wider text-xs pt-[5px] font-semibold ${menuOpen ? 'open' : ''}`} ref={menuRef}>
+        
+          <button className="btncross ms-auto" onClick={handleCloseMenu}>X</button>
+     <hr />
           {links.map(({ to, label }) => (
             <NavLink
               key={to}

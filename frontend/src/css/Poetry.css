@@ -21,13 +21,71 @@
     .poh2 ,.poep{
         width: 50% !important;
     }
+
+    .poems{
+        width: 70% !important;
+    }
 }
 
 
+@media (max-width:1080px) {
+    .poems{
+        width: 85% !important;
+    }
+
+     .poems li:nth-child(2) img{
+        left: -185% !important;
+     }
+
+      .poems li:nth-child(4) img{
+        left: -180% !important;
+        width: 75% !important;
+      }
+
+}
+
 @media (max-width:920px) {
+    .poems{
+        width: 95% !important;
+    }
+
+
     .poh2 ,.poep{
         width: 80% !important;
     }
+
+ .poems li:nth-child(2) img{
+        left: -130% !important;
+     }
+
+.poems li:nth-child(3) img{
+        left: 150% !important;
+        top: -30% !important;
+        width: 90% !important;
+     }
+
+      .poems li:nth-child(4) img{
+        left: -130% !important;
+        width: 70% !important;
+      }
+
+       .poems li:nth-child(5) img:nth-child(1){
+        right: -45% !important;
+       top: 15% !important;
+       width: 53% !important;
+      }
+       .poems li:nth-child(5) img:nth-child(2){
+        right: -62% !important;
+       top: 19% !important;
+       width: 54% !important;
+      }
+
+ .poems li:nth-child(7) img{
+        right: -62% !important;
+       top: 0% !important;
+       width: 54% !important;
+      }
+
 
     .poetimgis {
         top: 60%;
@@ -37,7 +95,120 @@
 
     }
 
-    .flowerim { 
-        display: none !important;
+    
+.potChilds{
+    min-height: 400px;
+}
+
+.potChilds:nth-child(2) p{
+    text-align: left !important;
+    padding-left: 10px;
+    width: 70% !important;
+    margin-right: auto !important;
+    margin-left:8%;
+}
+
+   .flowerim{
+    left: 74% !important;
+    width: 28% !important  ;    
+   }
+}
+
+@media (max-width:520px) {
+.potChilds:nth-child(3){
+    border-top: 1px solid var(--text);
+    margin-top: 25px;
+}
+
+.poems li{
+    max-width: 98% !important;
+    min-height:500px;
+    height: max-content;
+}
+
+    
+ .poems li:nth-child(1) img{
+       
+        right: 22% !important;
+        top: 50%;
+   
+     }
+
+
+      .poems li:nth-child(2) img{
+        left: 10% !important;
+        top:42% !important;
+     }
+
+     .poems li:nth-child(2) {
+        min-height: 400px !important;
+     }
+
+     .poems li:nth-child(3)
+     {
+        min-height: 300px !important;
+     }
+
+         .poems li:nth-child(3) img {
+        left: 5% !important;
+        top: 31% !important;
+        width: 90% !important;
     }
+
+
+     .poems li:nth-child(4){
+        min-height: 700px !important
+     }
+
+         .poems li:nth-child(4) img {
+        top: 63%;
+        left: 15% !important;
+        width: 70% !important;
+    }
+
+    .poems li:nth-child(5) {
+      margin-bottom: 51vh !important;
+
+    }
+
+
+    .poems li:nth-child(6){
+      margin-bottom: 28vh !important;
+
+    }
+
+        .poems li:nth-child(7) img {
+        right: 23% !important;
+        top: 64% !important;
+        width: 63% !important;}
+
+  .poems li:nth-child(5) img:nth-child(1){
+        right: 32% !important;
+       top: 101% !important;
+       width: 52% !important;
+      }
+       .poems li:nth-child(5) img:nth-child(2){
+        right: 10% !important;
+       top: 103% !important;
+       width: 54% !important;
+      }
+
+
+      .poems li:nth-child(6) img{
+        left: 20% !important;
+        top:101% !important;
+      }
+
+.poems li {
+    width: 100% !important;
+    margin: 0 auto !important;
+    
+}
+
+.poems li p {
+   width: 100% !important;
+   
+    text-align: center !important;
+}
+
 }
