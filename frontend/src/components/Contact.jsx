@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Title from '../components/Title';
 import "../css/Contact.css";
 import { FaFeatherAlt, FaHeart, FaBookOpen, FaHandshake, FaCommentDots } from 'react-icons/fa';
-import { BsInstagram } from 'react-icons/bs';
+import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { SiTiktok, SiAlltrails } from "react-icons/si";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -121,7 +123,8 @@ function Contact() {
         <div className="flex justify-center">
           <button 
             type="submit"
-            className="bg-gradient-to-r from-[#64cf8b] to-[#2daf7d] text-white py-3 px-2 rounded-full shadow-lg hover:scale-105 transition-all duration-300 text-lg tracking-wide"
+            className="bg-gradient-to-r from-[#64cf8b] to-[#2daf7d] text-white py-2 px-2 rounded-full shadow-lg hover:scale-105 
+            transition-all duration-300 text-sm tracking-wide"
           >
             ✉️ Whisper to the Wind
           </button>
@@ -129,16 +132,59 @@ function Contact() {
       </form>
 
 
-      <div className="mt-12 animate-fadeIn delay-500">
+      <div className="mt-12 animate-fadeIn delay-500 flex align-middle justify-center gap-6 ">
         <a 
-          href="https://instagram.com/its__gaurav_y" 
+          href="https://instagram.com/Jaskaran.0528" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-[#e56251]  hover:text-black transition"
+          className="flex items-center gap-2 text-grey  hover:text-[#d25050] transition"
         >
           <BsInstagram className="text-xl" />
-          itsgauravy
+          
         </a>
+
+
+  {/* Facebook */}
+  <a 
+    href="https://facebook.com/jaskaran.gill.3363" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-grey hover:text-[#1877F2] transition"
+  >
+    <BsFacebook className="text-xl" />
+    {/* Facebook */}
+  </a>
+
+  {/* TikTok */}
+  <a 
+    href="https://www.tiktok.com/@Jaskaran.0528" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-grey hover:text-red-600 transition"
+  >
+    <SiTiktok className="text-xl" />
+    {/* TikTok */}
+  </a>
+
+  {/* AllTrails */}
+  <a 
+    href="https://www.alltrails.com/members/jaskaran-gill-12?" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-grey hover:text-[#3B9A4B] transition"
+  >
+    <SiAlltrails className="text-xl" />
+    {/* AllTrails */}
+  </a>
+
+  
+  <a 
+    href="mailto:jaskaran.0528@outlook.com" 
+    className="flex items-center gap-2 text-grey hover:text-[#4251b6] transition"
+  >
+    <HiOutlineMail className="text-xl" />
+    {/* Email */}
+  </a>
       </div>
     </section>
   );

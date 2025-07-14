@@ -14,9 +14,10 @@ function Header() {
     // { to: "soulprints", label: "Gallery" },
     { to: "books", label: "Books" },
     // { to: "blog", label: "Blog" },
-    { to: "/contact", label: "Contact" },
+   
     // { to: "/workwithme", label: "Offerings" },
-    { to: "/soulletter", label: "Newsletter" },
+    { to: "soulletter", label: "Newsletter" }, 
+    { to: "contact", label: "Contact" },
     
   ];
 

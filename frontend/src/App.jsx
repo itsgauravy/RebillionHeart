@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { HashRouter, Routes, Route } from 'react-router-dom';
-
+// import ResetPassword from "./components/ResetPassword";
 import Home from './components/Home';
 import About from './components/About';
 import Poetry from './components/Poetry';
@@ -13,7 +13,7 @@ import Gallary from './components/Gallary';
 import Books from './components/Books';
 import Contact from './components/Contact';
 import Newsletter from './components/Newsletter';
-
+import Login from './Admin/Login';
 
 function App() {
   console.log("This is the latest version!");
@@ -38,6 +38,14 @@ function App() {
             <Route path="books" element={<Books />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="soulletter" element={<Newsletter />} />
+
+
+          {/* <Route path="/reset-password/:token" element={<ResetPassword />} /> */}
+
+            {/* Admin */}
+
+
+             <Route path="/hidden-Soul" element={<Login />} />
           </Routes>
           <Footer />
         </BrowserRouter>

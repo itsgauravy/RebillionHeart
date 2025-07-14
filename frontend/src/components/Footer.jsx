@@ -4,6 +4,8 @@ import "../css/Footer.css";
 import React from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
+import { SiTiktok, SiAlltrails } from "react-icons/si";
+
 function Footer () {
   return (
     <footer className="bg-[var(--text)] text-[var(--bg)] static bottom-0  !p-2.5 z-50">
@@ -16,41 +18,50 @@ function Footer () {
             Rebillion Heart
         </p>
 
-        <div className="flex @apply gap-x-1.5 justify-end socil w-[40%]">
-<a            
-         href="https://instagram.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-[var(--bg)] hover:text-[#E1306C] text-lg transition-colors duration-300"
->
-  <FaInstagram />
-</a>
 
-<a
-  href="https://facebook.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-[var(--bg)] hover:text-[#1877F2] text-lg transition-colors duration-300"
->
-  <FaFacebookF />
-</a>
+<div className="flex gap-x-1.5 justify-end w-[40%] socil">
+  <a
+    href="https://instagram.com/Jaskaran.0528"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[var(--bg)] hover:text-[#E1306C] text-[10px] transition-colors duration-300"
+  >
+    <FaInstagram className="text-md" />
+  </a>
 
-{/* <a
-  href="https://twitter.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-[var(--bg)] hover:text-[#1DA1F2] text-lg transition-colors duration-300"
+  <a
+    href="https://facebook.com/jaskaran.gill.3363"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[var(--bg)] hover:text-[#1877F2] text-[10px] transition-colors duration-300"
+  >
+    <FaFacebookF className="text-md" />
+  </a>
 
-  {/* <FaTwitter /> *
-  
-</a> */}
+  <a
+    href="https://www.tiktok.com/@Jaskaran.0528"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[var(--bg)] hover:text-red-600 text-[10px] transition-colors duration-300"
+  >
+    <SiTiktok className="text-md" />
+  </a>
 
-<a
-  href="mailto:your@email.com"
-  className="text-[var(--bg)] hover:text-[#D44638] text-lg transition-colors duration-300"
->
-  <FaEnvelope />
-</a>
+  <a
+    href="https://www.alltrails.com/members/jaskaran-gill-12?"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[var(--bg)] hover:text-[#3B9A4B] text-sm transition-colors duration-300"
+  >
+    <SiAlltrails className="text-md" />
+  </a>
+
+  <a
+    href="mailto:jaskaran.0528@outlook.com"
+    className="text-[var(--bg)] hover:text-[#D44638] text-sm transition-colors duration-300"
+  >
+    <FaEnvelope className="text-md" />
+  </a>
         </div>
 
          
