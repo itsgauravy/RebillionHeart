@@ -14,6 +14,8 @@ import Books from './components/Books';
 import Contact from './components/Contact';
 import Newsletter from './components/Newsletter';
 import Login from './Admin/Login';
+import AdminDashboard from './Admin/AdminDashboard';
+import ProtectedRoute from './Admin/ProtectedRoute';
 
 function App() {
   console.log("This is the latest version!");
@@ -39,13 +41,11 @@ function App() {
             <Route path="Contact" element={<Contact />} />
             <Route path="soulletter" element={<Newsletter />} />
 
-
-          {/* <Route path="/reset-password/:token" element={<ResetPassword />} /> */}
-
             {/* Admin */}
 
-
              <Route path="/hidden-Soul" element={<Login />} />
+            <Route path="/soulDashboard" element={ <ProtectedRoute> <AdminDashboard /> </ProtectedRoute> }/>
+            
           </Routes>
           <Footer />
         </BrowserRouter>

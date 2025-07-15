@@ -5,6 +5,7 @@ import { FaFeatherAlt, FaHeart, FaBookOpen, FaHandshake, FaCommentDots } from 'r
 import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { SiTiktok, SiAlltrails } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
+import axios from 'axios';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,18 +16,48 @@ function Contact() {
     reply: 'Yes',
   });
 
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Data ready to send to API:", formData);
+  const validateEmail = (email) => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
   };
 
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, formData);
+
+    if (res.status === 200 || res.status === 201) {
+      alert('✨ Your message has been sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        reply: 'Yes',
+      });
+    } else {
+      console.log('Unexpected response:', res);
+      alert('Message sent, but response was unexpected.');
+    }
+  } catch (error) {
+    console.error('❌ Error sending message:', error);
+    alert('❌ Something went wrong. Please try again later.');
+  }
+};
+
+
   return (
-    <section className="container mx-auto  flex flex-col items-center ">
+    <section className="container mx-auto flex flex-col items-center">
       <Title heading="Write to Me" />
 
       <div className="max-w-3xl w-full text-center mt-6 space-y-10 px-2 animate-fadeIn">
@@ -56,6 +87,9 @@ function Contact() {
         onSubmit={handleSubmit}
         className="mt-12 w-full max-w-xl space-y-8 animate-fadeIn delay-200"
       >
+        {successMessage && <div className="text-green-600 text-sm text-center">{successMessage}</div>}
+        {errorMessage && <div className="text-red-600 text-sm text-center">{errorMessage}</div>}
+
         <div className="grid gap-6 sm:grid-cols-2">
           <div className="floating-input">
             <input 
@@ -94,7 +128,7 @@ function Contact() {
             <option>Collaboration</option>
             <option>Other</option>
           </select>
-          <label className="select-label ">Subject</label>
+          <label className="select-label">Subject</label>
         </div>
 
         <div className="floating-input ">
@@ -123,68 +157,22 @@ function Contact() {
         <div className="flex justify-center">
           <button 
             type="submit"
-            className="bg-gradient-to-r from-[#64cf8b] to-[#2daf7d] text-white py-2 px-2 rounded-full shadow-lg hover:scale-105 
-            transition-all duration-300 text-sm tracking-wide"
+            className={`bg-gradient-to-r from-[#64cf8b] to-[#2daf7d] text-white py-2 px-2 rounded-full shadow-lg transition-all duration-300 text-sm tracking-wide ${
+              loading ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'
+            }`}
+            disabled={loading}
           >
-            ✉️ Whisper to the Wind
+            {loading ? 'Sending...' : '✉️ Whisper to the Wind'}
           </button>
         </div>
       </form>
 
-
       <div className="mt-12 animate-fadeIn delay-500 flex align-middle justify-center gap-6 ">
-        <a 
-          href="https://instagram.com/Jaskaran.0528" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-grey  hover:text-[#d25050] transition"
-        >
-          <BsInstagram className="text-xl" />
-          
-        </a>
-
-
-  {/* Facebook */}
-  <a 
-    href="https://facebook.com/jaskaran.gill.3363" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-grey hover:text-[#1877F2] transition"
-  >
-    <BsFacebook className="text-xl" />
-    {/* Facebook */}
-  </a>
-
-  {/* TikTok */}
-  <a 
-    href="https://www.tiktok.com/@Jaskaran.0528" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-grey hover:text-red-600 transition"
-  >
-    <SiTiktok className="text-xl" />
-    {/* TikTok */}
-  </a>
-
-  {/* AllTrails */}
-  <a 
-    href="https://www.alltrails.com/members/jaskaran-gill-12?" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-grey hover:text-[#3B9A4B] transition"
-  >
-    <SiAlltrails className="text-xl" />
-    {/* AllTrails */}
-  </a>
-
-  
-  <a 
-    href="mailto:jaskaran.0528@outlook.com" 
-    className="flex items-center gap-2 text-grey hover:text-[#4251b6] transition"
-  >
-    <HiOutlineMail className="text-xl" />
-    {/* Email */}
-  </a>
+        <a href="https://instagram.com/Jaskaran.0528" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-[#d25050] transition"><BsInstagram className="text-xl" /></a>
+        <a href="https://facebook.com/jaskaran.gill.3363" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-[#1877F2] transition"><BsFacebook className="text-xl" /></a>
+        <a href="https://www.tiktok.com/@Jaskaran.0528" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-red-600 transition"><SiTiktok className="text-xl" /></a>
+        <a href="https://www.alltrails.com/members/jaskaran-gill-12?" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-[#3B9A4B] transition"><SiAlltrails className="text-xl" /></a>
+        <a href="mailto:jaskaran.0528@outlook.com" className="text-grey hover:text-[#4251b6] transition"><HiOutlineMail className="text-xl" /></a>
       </div>
     </section>
   );

@@ -12,20 +12,27 @@ import { RiMoonClearFill } from "react-icons/ri";
 function Newsletter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(null);
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
   setStatus("loading");
 
-  // Simulate a successful API response after 1.5 seconds
-  setTimeout(() => {
-    // Simple email validation mock:
-    if (email && email.includes("@")) {
+  try {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/newsletter`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    if (response.ok) {
       setStatus("success");
       setEmail("");
     } else {
       setStatus("error");
     }
-  }, 1500);
+  } catch (err) {
+    console.error(err);
+    setStatus("error");
+  }
 };
 
   const listItems = [

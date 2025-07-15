@@ -47,7 +47,7 @@ function Header() {
         <button className="menubtn font-bold" onClick={handleMenuToggle}>
           ☰
         </button> 
-        <h2 className=" text-center  text-[var(--text)]">
+        <h2 className=" text-center  text-[var(--text)] py-0">
           Rebellion Heart
         </h2>
 

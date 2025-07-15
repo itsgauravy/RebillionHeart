@@ -12,29 +12,30 @@ function Login() {
     return emailRegex.test(email);
   };
 
-  const handleLogin = (e) => {
-    e.preventDefault();
+ const handleLogin = (e) => {
+  e.preventDefault();
 
-    const correctPassword = '123'; // Replace with secure auth logic
+  const corrctEmail = 'jaskaran@outlook.com'; 
+  const corrctPassword = '0528'; 
 
-    if (!isValidEmail(email)) {
-      setError('Please enter a valid email address.');
-      return;
-    }
+  if (!isValidEmail(email)) {
+    setError('Please enter a valid email address.');
+    return;
+  }
 
-    if (password === correctPassword) {
-      localStorage.setItem('isAdmin', 'true');
-      navigate('/soulDashboard');
-    } else {
-      setError('Incorrect password.');
-    }
-  };
+  if (email === corrctEmail && password === corrctPassword) {
+    localStorage.setItem('isAdmin', 'true');
+    navigate('/soulDashboard');
+  } else {
+    setError('Invalid email or password.');
+  }
+};
 
   return (
     <section className="container min-h-[calc(100vh-10.5rem)] flex items-center justify-center  px-3">
       <div className="w-full max-w-md p-8 @apply shadow-[rgba(0,0,0,0.15)_0px_5px_15px_0px] rounded-xl ">
-        <h2 className="text-2xl font-bold mb-6 text-center text-[var(--text)]"> Login</h2>
-        <form onSubmit={handleLogin} className="flex flex-col gap-6">
+        <h2 className="text-2xl font-bold mb-6 text-center text-[var(--text)] ">Admin Login</h2>
+        <form onSubmit={handleLogin} className="flex flex-col gap-6 ">
           <div className="floating-input w-full relative">
             <input
               type="email"
